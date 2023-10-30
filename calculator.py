@@ -1,6 +1,6 @@
 from tkinter import*
 win=Tk()
-win.geometry('400x400')
+win.geometry('1000x1000')
 
 def click(event):
     global scvalue
@@ -62,6 +62,7 @@ for i in lis:
     b.pack(side=LEFT)
     b.bind("<Button-1>",click)
 f.pack(fill=BOTH,padx=20)
+f=Frame(win,bg="grey")
 lis=['=','**','c']
 for i in lis:
     b=Button(f,text=str(i),font='calibri 12 bold')
